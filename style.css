@@ -1,0 +1,167 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto&family=Roboto+Mono:ital,wght@1,300&display=swap');
+
+*{
+  padding: 0;margin: 0;box-sizing: border-box;
+}
+body,html{
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+
+}
+
+.mainNavContainer{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem 1.1rem;
+}
+.Searchbar{
+  max-width: 13rem;
+  max-height: 2rem;
+  display: flex;
+
+}
+#searchButton{
+  height: 2rem;
+  width: 4rem;
+}
+.Searchbar input{
+  padding:0.8rem 6.2rem 0.8rem 0rem;
+}
+
+.navSideBarContainer{
+  display:flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center; 
+  padding-left: 3rem;
+  
+}
+.CenterContainer{
+  display: flex;
+}
+@media screen and (max-width:980px) {
+  .mainNavContainer{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+  }
+  
+  
+}
+@media screen and (max-width:670px) {
+  .mainNavContainer{
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+}
+.avatarIcon img ,.avatar img{  
+  max-width: 2.3rem;
+  border-radius: 20px;
+}
+.divider{
+  border : 1px solid lightgray;
+
+}
+
+.tagsContainer{
+  display: flex;
+  gap: 1rem;
+  padding: 0.6rem ;
+  padding-left: 2.5rem;
+  width: 100%;
+
+  
+}
+@media screen and (max-width:740px) {
+  .tagsContainer{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
+
+#darkTag{
+  background-color: black;
+  color: white;
+  border:1px solid black;
+  padding: 0.7rem;
+  border-radius: 1rem;
+}
+.LightTag {
+  border:1px solid black;
+  background-color: lightgray;
+  padding: 0.7rem;
+  border-radius: 1rem;
+}
+
+.MainContainer{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+}
+@media screen and (max-width: 520px) {
+  .sideBar{
+    padding: 0.3rem;
+  font-size: 0.5rem;
+  }
+
+}
+/* @media screen and (max-width: 465px) {
+  
+  .tagsContainer{
+    max-width: 91%;
+  }
+
+} */
+.headerContainer{
+  width: 100%;
+}
+.sideBar{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+  align-items: center;
+  padding: 10px;
+}
+.side-icons{
+  text-align: center;
+}
+
+
+/* ====================================Body======================================= */
+
+.mainCardsBody{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding:2rem;
+
+
+}
+.contentContainer{
+
+  padding: 1rem;
+  line-height: 2rem;
+}
+.avatar{
+  display: flex;
+  gap: 0.5rem;
+}
+.avatar h2{
+  font-size: 1.3rem;
+
+}
+.imageCon img{
+  height: 320px;
+  width: 320px;
+}
+
+
